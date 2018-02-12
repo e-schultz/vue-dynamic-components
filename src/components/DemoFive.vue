@@ -6,8 +6,6 @@
                     v-model="formData">
     </form-generator>
 
-    <br/> --
-    <br/> {{formData}}
   </div>
 </template>
 
@@ -15,7 +13,7 @@
 import FormGenerator from '@/components/v5/FormGenerator'
 
 export default {
-  name: "FormsDemo",
+  name: "GeneratorDemo",
   components: { FormGenerator },
   data() {
     return {
