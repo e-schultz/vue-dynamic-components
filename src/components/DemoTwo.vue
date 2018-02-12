@@ -3,19 +3,9 @@
     <button @click="showWhich = 'DynamicOne'">Show Component One</button>
 
     <button @click="showWhich = 'DynamicTwo'">Show Component Two</button>
-    <!--
-    <component 
-      :is="showWhich" 
-      :firstName="person.firstName"
-      :lastName="person.lastName"
-      :title="person.title"
-      @upperCase="switchCase('upperCase')"
-      @lowerCase="switchCase('lowerCase')">      
-    </component>-->
 
     <component :is="showWhich"
                v-bind="person"
-               v-on="doStuff"
                @upperCase="switchCase('upperCase')"
                @lowerCase="switchCase('lowerCase')">
     </component>
