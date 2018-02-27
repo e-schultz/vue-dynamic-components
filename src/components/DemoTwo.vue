@@ -13,30 +13,34 @@
 </template>
 
 <script>
-import DynamicOne from '@/components/v2/DynamicOne.vue'
-import DynamicTwo from '@/components/v2/DynamicTwo.vue'
+import DynamicOne from "../components/v2/DynamicOne.vue";
+import DynamicTwo from "../components/v2/DynamicTwo.vue";
 
 export default {
-  name: 'DemoOne',
+  name: "DemoOne",
   components: {
-    DynamicOne, DynamicTwo
+    DynamicOne,
+    DynamicTwo
   },
   data() {
     return {
-      showWhich: 'DynamicOne',
+      showWhich: "DynamicOne",
       person: {
-        title: 'Mr',
-        firstName: 'Evan',
-        lastName: 'Schultz'
+        title: "Mr",
+        firstName: "Evan",
+        lastName: "Schultz"
       }
-    }
+    };
   },
   methods: {
     switchCase: function x(toCase) {
-      Object.keys(this.person).forEach((value) => {
-        this.person[value] = toCase === 'upperCase' ? this.person[value].toUpperCase() : this.person[value].toLowerCase()
+      Object.keys(this.person).forEach(value => {
+        this.person[value] =
+          toCase === "upperCase"
+            ? this.person[value].toUpperCase()
+            : this.person[value].toLowerCase();
       });
     }
   }
-}
+};
 </script>

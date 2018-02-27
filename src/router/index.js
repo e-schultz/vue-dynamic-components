@@ -1,15 +1,16 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/components/Home";
-import DemoOne from "@/components/DemoOne.vue";
-import DemoTwo from "@/components/DemoTwo.vue";
-import DemoThree from "@/components/DemoThree.vue";
-import DemoFour from "@/components/DemoFour.vue";
-import DemoFive from "@/components/DemoFive.vue";
+import Home from "../components/Home";
+import DemoOne from "../components/DemoOne.vue";
+import DemoTwo from "../components/DemoTwo.vue";
+import DemoThree from "../components/DemoThree.vue";
+import DemoFour from "../components/DemoFour.vue";
+import DemoFive from "../components/DemoFive.vue";
 
 Vue.use(Router);
 
 export default new Router({
+  mode: "history",
   routes: [
     {
       path: "/",

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import FormGenerator from '@/components/v5/FormGenerator'
+import FormGenerator from "../components/v5/FormGenerator";
 
 export default {
   name: "GeneratorDemo",
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       formData: {
-        firstName: 'Evan'
+        firstName: "Evan"
       },
       schema: [
         {
@@ -35,7 +35,7 @@ export default {
           fieldType: "TextInput",
           placeholder: "First Name",
           label: "First Name",
-          name: "firstName",
+          name: "firstName"
         },
         {
           fieldType: "TextInput",
