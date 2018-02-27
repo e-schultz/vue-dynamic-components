@@ -8,7 +8,9 @@
                v-bind="field">
 
     </component>
-
+    <p>
+      Hello {{formData.title}} {{formData.firstName}} {{formData.lastName}}, I hear you are {{formData.age}} years old.
+    </p>
   </div>
 </template>
 
