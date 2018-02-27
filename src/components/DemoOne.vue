@@ -7,18 +7,19 @@
 </template>
 
 <script>
-import DynamicOne from '@/components/v1/DynamicOne.vue'
-import DynamicTwo from '@/components/v1/DynamicTwo.vue'
+import DynamicOne from "../components/v1/DynamicOne.vue";
+import DynamicTwo from "../components/v1/DynamicTwo.vue";
 
 export default {
-  name: 'DemoOne',
+  name: "DemoOne",
   components: {
-    DynamicOne, DynamicTwo
+    DynamicOne,
+    DynamicTwo
   },
   data() {
     return {
-      showWhich: 'DynamicOne'
-    }
+      showWhich: "DynamicOne"
+    };
   }
-}
+};
 </script>

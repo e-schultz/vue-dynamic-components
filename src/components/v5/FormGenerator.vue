@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import NumberInput from '@/components/v5/NumberInput'
-import SelectList from '@/components/v5/SelectList'
-import TextInput from '@/components/v5/TextInput'
+import NumberInput from "./NumberInput";
+import SelectList from "./SelectList";
+import TextInput from "./TextInput";
 export default {
   name: "FormGenerator",
   components: { NumberInput, SelectList, TextInput },
-  props: ['schema', 'value'],
+  props: ["schema", "value"],
   data() {
     return {
       formData: this.value || {}
@@ -26,7 +26,7 @@ export default {
   methods: {
     updateForm(fieldName, value) {
       this.$set(this.formData, fieldName, value);
-      this.$emit('input', this.formData)
+      this.$emit("input", this.formData);
     }
   }
 };
