@@ -6,6 +6,9 @@
                     v-model="formData">
     </form-generator>
 
+    <p>
+      Hello {{formData.title}} {{formData.firstName}} {{formData.lastName}}, I hear you are {{formData.age}} years old.
+    </p>
   </div>
 </template>
 
